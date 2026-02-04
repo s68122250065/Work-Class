@@ -11,7 +11,12 @@ public class Login {
         this.password = password;
     }
 
-    public void loginStatus() {
-        System.out.println("loginStatus");
+    public boolean loginStatus(String inputUsername, String inputPassword) {
+        if (this.username.equals(inputUsername) &&
+                this.password.equals(inputPassword)) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
